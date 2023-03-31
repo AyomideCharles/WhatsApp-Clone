@@ -40,10 +40,10 @@ class _MyHomePageState extends State<MyHomePage> {
       // animationDuration: const Duration(),
       initialIndex: 1,
       child: Scaffold(
-          floatingActionButton: FloatingActionButton(
-            onPressed: () {},
-            child: const Icon(Icons.chat),
-          ),
+          // floatingActionButton: FloatingActionButton(
+          //   onPressed: () {},
+          //   child: const Icon(Icons.chat),
+          // ),
           appBar: AppBar(
             // toolbarHeight: 30,
             title: Text(widget.title),

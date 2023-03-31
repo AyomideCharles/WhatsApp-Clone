@@ -8,6 +8,9 @@ class Status extends StatefulWidget {
 }
 
 class _StatusState extends State<Status> {
+  List names = ['Ayomide', 'Charles', 'Omotosho', 'Flutter', 'Javascript'];
+  int selectedIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -38,22 +41,28 @@ class _StatusState extends State<Status> {
             ),
             trailing: const Icon(Icons.camera_alt),
           ),
-          Row(
-            children: [
-              Expanded(
-                child: Container(
-                  height: 50,
-                  alignment: Alignment.centerLeft,
-                  padding: const EdgeInsets.fromLTRB(22, 0, 0, 0),
-                  color: Colors.grey,
-                  child: const Text(
-                    'RECENT UPDATES',
-                    style: TextStyle(color: Colors.white),
-                  ),
-                ),
-              ),
-            ],
+          Container(
+            width: double.infinity,
+            height: 50,
+            alignment: Alignment.bottomLeft,
+            padding: const EdgeInsets.fromLTRB(25, 0, 0, 5),
+            color: Colors.grey,
+            child: const Text('RECENT UPDATES'),
           ),
+          ListView.builder(
+              shrinkWrap: true,
+              itemCount: names.length,
+              itemBuilder: (context, index) {
+                var name = names[index];
+
+                return ListTile(
+                  leading: const CircleAvatar(
+                    child: Icon(Icons.update),
+                  ),
+                  title: Text(name),
+                  subtitle: const Text('1h ago'),
+                );
+              })
         ],
       ),
     );
