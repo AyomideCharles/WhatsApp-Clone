@@ -45,28 +45,34 @@ class _CommunityState extends State<Community> {
             Container(
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
-                color: Colors.red,
+                color: Colors.grey,
               ),
-              height: 150,
-              padding: const EdgeInsets.fromLTRB(22, 0, 0, 0),
+              height: 300,
+              padding: const EdgeInsets.fromLTRB(0, 0, 0, 0),
               child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  const Text('SQI COMMUNITY'),
-                  Row(
-                    children: const [Icon(Icons.percent), Icon(Icons.percent)],
+                children: const [
+                  ListTile(
+                    leading: Icon(Icons.gamepad),
+                    title: Text('FIFA COMMUNITY'),
                   ),
-                  Row(
-                    children: const [Icon(Icons.percent), Icon(Icons.percent)],
+                  Divider(
+                    color: Colors.white,
+                    height: 10,
                   ),
-                  Row(
-                    children: const [Icon(Icons.percent), Icon(Icons.percent)],
+                  ListTile(
+                    leading: Icon(Icons.sports_football),
+                    title: Text('Rouge Naija Gamers'),
+                    subtitle: Text('+2349019377505: Yes .....'),
                   ),
-                  Row(
-                    children: const [Icon(Icons.percent), Icon(Icons.percent)],
+                  ListTile(
+                    leading: Icon(Icons.sports_football),
+                    title: Text('Gamers NG'),
+                    subtitle: Text('+2349019377505: Yes .....'),
                   ),
-                  Row(
-                    children: const [Icon(Icons.percent), Icon(Icons.percent)],
+                  ListTile(
+                    leading: Icon(Icons.sports_football),
+                    title: Text('Gamers NG'),
+                    subtitle: Text('+2349019377505: Yes .....'),
                   ),
                 ],
               ),
@@ -77,21 +83,24 @@ class _CommunityState extends State<Community> {
             Container(
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
-                color: Colors.red,
+                color: Colors.grey,
               ),
-              height: 100,
+              height: 200,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  const Text('FIFA FORUM'),
-                  Row(
-                    children: const [Icon(Icons.percent), Icon(Icons.percent)],
+                children: const [
+                  ListTile(
+                    leading: Icon(Icons.gamepad),
+                    title: Text('SQI Community'),
                   ),
-                  Row(
-                    children: const [Icon(Icons.percent), Icon(Icons.percent)],
+                  Divider(
+                    color: Colors.white,
+                    height: 10,
                   ),
-                  Row(
-                    children: const [Icon(Icons.percent), Icon(Icons.percent)],
+                  ListTile(
+                    leading: Icon(Icons.sports_football),
+                    title: Text('Rouge Naija Gamers'),
+                    subtitle: Text('+2349019377505: Yes .....'),
                   ),
                 ],
               ),
